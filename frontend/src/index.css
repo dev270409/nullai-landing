@@ -82,11 +82,6 @@ code,
     }
 }
 
-.animate-binary-scroll {
-    animation: binary-scroll 28s linear infinite;
-    will-change: transform;
-}
-
 /* Subtle breathing glow on the zero outline */
 @keyframes zero-pulse {
     0%,
