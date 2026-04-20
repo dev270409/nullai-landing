@@ -12,10 +12,13 @@ const VIEW_W = 400;
 const VIEW_H = 600;
 const CX = VIEW_W / 2;
 const CY = VIEW_H / 2;
-const OUTER_RX = 175;
-const OUTER_RY = 290;
-const INNER_RX = 108;
-const INNER_RY = 228;
+// Narrower, more typographic shape: slim sides, thick top/bottom caps.
+// side thickness = OUTER_RX - INNER_RX = 28
+// cap thickness  = OUTER_RY - INNER_RY = 72  (≈ 2.5x sides → pinched waist)
+const OUTER_RX = 148;
+const OUTER_RY = 292;
+const INNER_RX = 120;
+const INNER_RY = 220;
 
 const LINE_COUNT = 120;
 const LINE_HEIGHT = 10; // svg units per line
@@ -44,7 +47,7 @@ const ZeroLogo = () => {
     >
       <svg
         viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
-        className="block w-full max-w-[min(78vw,560px)] h-auto animate-zero-pulse"
+        className="block w-full max-w-[min(52vw,360px)] h-auto animate-zero-pulse"
         preserveAspectRatio="xMidYMid meet"
         xmlns="http://www.w3.org/2000/svg"
       >
