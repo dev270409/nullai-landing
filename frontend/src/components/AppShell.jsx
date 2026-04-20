@@ -24,7 +24,7 @@ const AppShell = () => {
           data-testid="brand-mark"
           className="pointer-events-auto inline-flex items-center gap-3 reveal reveal-1"
         >
-          <div className="inline-flex items-center justify-center h-9 w-9 border border-white/25 hover:border-white/60 transition-colors bg-transparent">
+          <div className="inline-flex items-center justify-center h-9 w-9 border border-white/25 hover:border-white/60 transition-colors bg-white/[0.04] backdrop-blur-sm">
             <ZeroLogo size={16} />
           </div>
           <span className="font-mono text-[11px] tracking-[0.35em] uppercase text-white">
