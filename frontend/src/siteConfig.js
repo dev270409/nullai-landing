@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "NULLAI",
   philosophy: "Synthetic Protocol",
-  donationAddress: "0x9Ae56209e900994f390022415174542B767E9344",
+  donationAddress: "0x9Ae5C2552eFDFC314D78dd9528A4F3DDFB730344",
   links: {
     manifesto: "https://distriai.gitbook.io/distriai-docs/",
     x: "https://x.com/nullai_protocol",
@@ -39,6 +39,12 @@ export const siteConfig = {
     status: "Energy detected. Awaiting compute contribution.",
     footnote:
       "Donating to this address helps cover the gas costs for the Mainnet manifestation.",
+    network: "Ethereum Mainnet",
+    accepted: [
+      { symbol: "ETH", label: "Ether", standard: "Native" },
+      { symbol: "USDC", label: "USD Coin", standard: "ERC-20" },
+      { symbol: "USDT", label: "Tether", standard: "ERC-20" },
+    ],
   },
   disclaimer:
     "NULLAI is a synthetic experiment. No central team. No human promises. Only code.",

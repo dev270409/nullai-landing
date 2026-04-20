@@ -65,10 +65,41 @@ const DonationModal = ({ open, onOpenChange }) => {
             {siteConfig.donation.status}
           </div>
 
+          {/* Accepted networks & assets */}
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/40">
+                Accepted · {siteConfig.donation.network}
+              </div>
+              <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/30">
+                only
+              </div>
+            </div>
+            <div
+              data-testid="donation-assets"
+              className="grid grid-cols-3 gap-2"
+            >
+              {siteConfig.donation.accepted.map((a) => (
+                <div
+                  key={a.symbol}
+                  data-testid={`donation-asset-${a.symbol.toLowerCase()}`}
+                  className="border border-white/15 px-3 py-2.5 flex flex-col gap-0.5"
+                >
+                  <span className="font-mono text-[13px] text-white tracking-tight leading-none">
+                    {a.symbol}
+                  </span>
+                  <span className="font-mono text-[9px] tracking-[0.2em] uppercase text-white/40 leading-none">
+                    {a.standard}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Address block */}
           <div className="space-y-2">
             <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/40">
-              Base · donation address
+              Ethereum · donation address
             </div>
             <div
               data-testid="donation-address-block"
