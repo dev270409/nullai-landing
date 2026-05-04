@@ -60,7 +60,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "prebuild": "npm install --no-save --legacy-peer-deps ajv@8.17.1 ajv-keywords@5.1.0"
   },
   "browserslist": {
     "production": [
