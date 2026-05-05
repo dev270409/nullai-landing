@@ -1,5 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd frontend && yarn install --frozen-lockfile || yarn install",
+  "buildCommand": "cd frontend && yarn build",
+  "outputDirectory": "frontend/build"
   "installCommand": "cd frontend && npm install --legacy-peer-deps",
   "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/build",
