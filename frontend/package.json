@@ -59,6 +59,9 @@
   },
   "scripts": {
     "start": "craco start",
+    "build": "node scripts/ensure-ajv.js && craco build",
+    "test": "craco test",
+    "postinstall": "npm install --no-save --legacy-peer-deps ajv@8.17.1 ajv-keywords@5.1.0"
     "build": "craco build",
     "test": "craco test",
     "prebuild": "npm install --no-save --legacy-peer-deps ajv@8.17.1 ajv-keywords@5.1.0"
