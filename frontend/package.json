@@ -94,22 +94,16 @@
   "overrides": {
     "ajv": "^8.17.1",
     "ajv-keywords": "^5.1.0"
-<<<<<<< codex/fix-build-error-due-to-missing-module-m0slpf
-=======
  codex/fix-build-error-due-to-missing-module-sin7i1
 
 codex/fix-build-error-due-to-missing-module-9gyule
- main
->>>>>>> main
+  main
   },
   "engines": {
     "node": "20.x",
     "npm": "10.x"
-<<<<<<< codex/fix-build-error-due-to-missing-module-m0slpf
-=======
  codex/fix-build-error-due-to-missing-module-sin7i1
 
-main
->>>>>>> main
+ main
   }
 }
